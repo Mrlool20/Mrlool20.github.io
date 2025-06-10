@@ -275,8 +275,9 @@
             } else {
                 const targetPage = document.getElementById(pageId);
                 if (targetPage) {
-                    // 상세 페이지 내용 동적 생성 (이미 생성되지 않았다면)
-                    if (targetPage.innerHTML === '') {
+                    // [수정된 부분]
+                    // 상세 페이지 내용 동적 생성 (요소(element)가 없는 경우에만 생성)
+                    if (targetPage.children.length === 0) {
                        targetPage.innerHTML = createRecipePageHTML(pageId);
                     }
                     
