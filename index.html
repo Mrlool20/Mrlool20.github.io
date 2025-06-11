@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>제로 웨이스트 레시피: 새로운 발견</title>
+    <title>지구사랑단 : 제로 웨이스트 음식</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,20 +46,38 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #D97706; /* Amber-600 */
         }
+        /*추가본*/
+        /* === 추가할 CSS 코드 시작 === */
+        body {
+            background-color: #1a1a1a; /* body 배경색을 첫 섹션과 맞춤 */
+        }
+
+        #home > section:first-child { /* 첫 번째 섹션의 배경색 지정 */
+            background-color: #1a1a1a;
+        }
+
+        #recipes { /* 두 번째 섹션에 그라데이션 배경 적용 */
+            background: linear-gradient(to bottom, #1a1a1a, #1f2937 20%);
+            padding-top: 100px; /* 그라데이션 시작 지점 조절 */
+        }
+
+        #home { /* 레시피 섹션 아래로 이어지는 배경색을 위한 설정 */
+            background-color: #1f2937;
+        }
     </style>
 </head>
-<body class="bg-gray-900 text-white">
+<body class="text-white">
 
     <!-- 메인 페이지 -->
     <div id="home" class="page">
         <!-- 섹션 1: 음식물 쓰레기 심각성 재고 -->
-        <section class="h-screen flex flex-col items-center justify-center text-center p-4 bg-black">
+        <section class="h-screen flex flex-col items-center justify-center text-center p-4">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
                 우리가 버리는 음식들,<br>다시 태어날 수 있다면?
             </h1>
             <p class="text-lg md:text-xl max-w-2xl text-gray-300">
-                매년 전 세계 식량의 3분의 1이 버려지고 있습니다.<br class="hidden md:block">
-                버려지는 껍질 속에 숨겨진 놀라운 변신을 만나보세요.
+                매년 전 세계에서 10억 톤의 음식물 쓰레기가 버려집니다.<br class="hidden md:block">
+                버려지는 껍질의 놀라운 변신을 만나보세요.
             </p>
             <div class="absolute bottom-10 animate-bounce">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -80,9 +98,9 @@
                 <div class="reveal" style="transition-delay: 400ms;">
                     <a href="#" onclick="showPage('banana-page'); return false;" class="group block rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                         <div class="relative">
-                            <img src="https://placehold.co/600x400/854d0e/ffffff?text=바나나껍질+튀김" alt="바나나껍질 튀김 이미지" class="w-full h-64 object-cover">
+                            <img src="https://github.com/Mrlool20/Mrlool20.github.io/blob/main/banana.jpg?raw=true" alt="바나나껍질 튀김 이미지" class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-                                <h3 class="text-3xl font-bold text-white">바나나껍질 튀김</h3>
+                                <h3 class="text-5xl font-bold text-white">바나나껍질 튀김</h3>
                             </div>
                         </div>
                     </a>
@@ -92,9 +110,9 @@
                 <div class="reveal" style="transition-delay: 600ms;">
                     <a href="#" onclick="showPage('orange-page'); return false;" class="group block rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                         <div class="relative">
-                            <img src="https://placehold.co/600x400/d97706/ffffff?text=오렌지껍질+정과" alt="오렌지껍질 정과 이미지" class="w-full h-64 object-cover">
+                            <img src="https://github.com/Mrlool20/Mrlool20.github.io/blob/main/orange.jpg?raw=true" alt="오렌지껍질 정과 이미지" class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-                                <h3 class="text-3xl font-bold text-white">오렌지껍질 정과</h3>
+                                <h3 class="text-5xl font-bold text-white">오렌지껍질 정과</h3>
                             </div>
                         </div>
                     </a>
@@ -104,9 +122,9 @@
                 <div class="reveal" style="transition-delay: 800ms;">
                     <a href="#" onclick="showPage('watermelon-page'); return false;" class="group block rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                         <div class="relative">
-                            <img src="https://placehold.co/600x400/15803d/ffffff?text=수박김치" alt="수박김치 이미지" class="w-full h-64 object-cover">
+                            <img src="https://github.com/Mrlool20/Mrlool20.github.io/blob/main/waterkimchi.jpg?raw=true" alt="수박김치 이미지" class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-                                <h3 class="text-3xl font-bold text-white">수박김치</h3>
+                                <h3 class="text-5xl font-bold text-white">수박김치</h3>
                             </div>
                         </div>
                     </a>
@@ -151,24 +169,23 @@
         // --- 페이지 네비게이션 로직 ---
         const pages = {
             'banana-page': {
-                title: '바삭하고 달콤한, 바나나껍질 튀김',
-                youtubeId: 'dQw4w9WgXcQ', // 예시 유튜브 ID
-                description: '버려지던 바나나 껍질의 놀라운 변신! 풀드포크와 비슷한 식감과 달콤한 맛으로 아이들 간식으로도, 맥주 안주로도 손색이 없습니다.',
+                title: '바삭하고 부드러운, 바나나껍질 튀김',
+                youtubeId: '7mRmvTPsBs8?si=UddoZrPvjDjgyD7o', // 예시 유튜브 ID
+                description: '버려지던 바나나 껍질의 놀라운 변신! 감자튀김 같은 식감과 맛으로 아이들 간식으로도, 맥주 안주로도 손색이 없습니다.',
                 ingredients: [
-                    '유기농 바나나 껍질 2개',
-                    '튀김가루 1컵',
-                    '물 1컵',
+                    '유기농 바나나 껍질 1~2개',
+                    '튀김가루 200ml',
+                    '물 200ml',
                     '식용유',
-                    '간장 1큰술',
-                    '설탕 1큰술',
+                    '소금 약간',
                     '원하는 시즈닝 (파프리카 가루, 칠리 등)'
                 ],
                 instructions: [
                     '바나나 껍질을 깨끗이 세척한 후, 숟가락으로 내부의 흰 부분을 가볍게 긁어냅니다.',
-                    '껍질을 포크로 길게 찢어 결을 만듭니다.',
+                    '껍질을 먹기 좋은 크기로 잘라줍니다다.',
                     '간장과 설탕으로 밑간을 하고 10분간 재워둡니다.',
-                    '튀김가루와 물을 섞어 튀김 반죽을 만듭니다.',
-                    '밑간한 껍질에 튀김옷을 입혀 170도로 예열된 기름에 노릇하게 튀겨냅니다.',
+                    '튀김가루와 물, 약간의 소금(한 꼬집)을 섞어 튀김 반죽을 만듭니다.',
+                    '잘라둔 껍질에 튀김옷을 입혀 170도로 예열된 기름에 노릇하게 튀겨냅니다.',
                     '기름을 빼고 원하는 시즈닝을 뿌려 마무리합니다.'
                 ]
             },
@@ -179,36 +196,40 @@
                 ingredients: [
                     '무농약 오렌지 껍질 3개 분량',
                     '설탕 1.5컵',
-                    '물 1컵',
                     '물엿 또는 올리고당 0.5컵'
                 ],
                 instructions: [
                     '오렌지 껍질을 깨끗이 씻어 흰 부분을 최대한 제거하고 얇게 채 썹니다.',
-                    '끓는 물에 껍질을 넣고 2-3번 데쳐 쓴맛을 제거합니다.',
-                    '냄비에 데친 껍질, 설탕, 물을 넣고 중불에서 졸이기 시작합니다.',
+                    '끓는 물에 껍질을 넣고 2-3번(1회당 10분 이상) 데쳐 쓴맛을 제거합니다.',
+                    '냄비에 데친 껍질, 설탕을 넣고 중불에서 졸이기 시작합니다.',
                     '수분이 거의 증발하면 약불로 줄이고 물엿을 넣어 윤기나게 졸여줍니다.',
-                    '꾸덕해지면 유산지 위에 넓게 펼쳐 반나절 이상 건조시킵니다.',
+                    '꾸덕해지면 유산지 위에 넓게 펼쳐 식을 때까지 건조시킵니다.',
                     '기호에 따라 설탕을 묻혀 마무리합니다.'
                 ]
             },
             'watermelon-page': {
-                title: '아삭함이 살아있는, 수박김치',
+                title: '아삭함이 살아있는 밥도둑!, 수박김치',
                 youtubeId: 'dQw4w9WgXcQ', // 예시 유튜브 ID
                 description: '수박의 흰 껍질 부분을 이용한 별미 김치. 무생채보다 시원하고 아삭한 식감이 입맛을 돋웁니다. 비빔밥이나 고기 요리에 곁들여보세요.',
                 ingredients: [
-                    '수박 흰 껍질 500g',
-                    '고춧가루 3큰술',
-                    '멸치액젓 2큰술',
+                    '수박 흰 껍질 400g(수박 반쪽)',
+                    '소금 0.5스푼',
+                    '설탕 1스푼',
+                    '올리고당 1스푼',
+                    '고춧가루 3스푼',
+                    '식초 2스푼',
+                    '멸치액젓 1큰술',
+                    '매실액 1스푼',
+                    '참기름 1스푼',
+                    '참깨 1스푼',
                     '다진 마늘 1큰술',
-                    '다진 생강 1작은술',
-                    '매실청 1큰술',
-                    '쪽파 약간, 통깨'
+                    '대파 30g'
                 ],
                 instructions: [
-                    '수박의 초록색 겉껍질을 필러로 벗겨내고, 흰 부분만 분리합니다.',
-                    '흰 껍질을 얇게 나박썰기 한 후, 소금에 15분간 절여 물기를 꼭 짭니다.',
-                    '볼에 절인 수박 껍질과 모든 양념 재료를 넣고 골고루 버무립니다.',
-                    '마지막으로 쪽파와 통깨를 넣고 가볍게 섞어줍니다.',
+                    '수박의 초록색 겉껍질과 과육부분을 제거하고, 흰 부분만 분리합니다.',
+                    '흰 껍질을 얇게 나박썰기 한 후, 소금과 설탕, 올리고당을 넣고 1시간 절여 물기를 꼭 짭니다.',
+                    '절인 수박 껍질과 모든 양념 재료를 넣고 골고루 버무립니다.',
+                    '마지막으로 대파와 참깨를 넣고 가볍게 섞어줍니다.',
                     '바로 먹어도 맛있고, 반나절 숙성 후 먹으면 더욱 깊은 맛을 느낄 수 있습니다.'
                 ]
             }
